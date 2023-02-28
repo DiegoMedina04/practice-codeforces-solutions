@@ -1,0 +1,16 @@
+import java.util.*;
+public class Main {
+  public static void main(String[] args) {
+    Scanner sc= new Scanner(System.in);
+    String n = sc.nextLine();
+    String cad= String.valueOf(n);
+    for (int index = 0; index < cad.length()/2; index++) {
+        if(cad.charAt(index) != cad.charAt(cad.length()-index-1)){
+           System.out.println(false);
+          break;
+        }else{
+          System.out.println(true);
+        }
+      }  
+  }
+}
