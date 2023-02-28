@@ -1,0 +1,16 @@
+import java.util.*;
+public class Main {
+  public static void main(String[] args) {
+    Scanner input = new Scanner(System.in);
+    int n = input.nextInt();
+    String cad = input.next().toLowerCase();
+    char v[]= cad.toCharArray();
+    int cont=0;
+    for (int index = 1; index < n; index++) {
+      if(v[index-1]==v[index]){
+        cont++;
+      }
+    }
+    System.out.println(cont);
+  }
+}
