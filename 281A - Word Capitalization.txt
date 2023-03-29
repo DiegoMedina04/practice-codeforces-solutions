@@ -1,0 +1,19 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc= new Scanner(System.in);  
+        String name= sc.next();
+      String firstNameCapital=String.valueOf(name.charAt(0)).toUpperCase();
+      
+      if(String.valueOf(name.charAt(0)).equals(firstNameCapital)){
+        System.out.println(name);         
+      }else{
+          char[] newWord= name.toCharArray();
+          char firstChar = firstNameCapital.charAt(0);
+          newWord[0]= firstChar;
+          System.out.println(newWord);
+      }
+          
+    }
+}
