@@ -1,0 +1,20 @@
+import java.util.*;
+public class Main {
+  public static void main(String[] args) {
+    Scanner sc= new Scanner(System.in);
+    String positions = sc.next();
+    int cont=0;
+    for (int index = 1; index < positions.length(); index++) {
+      if(positions.charAt(index-1)==positions.charAt(index)){
+          cont++;
+        if(cont==6){
+          System.out.println("YES");
+          return;
+        }
+        }else{
+          cont=0;
+        }
+    }
+    System.out.println("NO");
+  }
+}
